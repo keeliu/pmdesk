@@ -1,0 +1,28 @@
+{
+  "name": "pm-req-workbench",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build",
+    "start": "node server/index.mjs",
+    "seed": "node server/seed.mjs",
+    "test": "node scripts/scenario-test.mjs"
+  },
+  "dependencies": {
+    "docx": "^9.5.1",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "jszip": "^3.10.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}

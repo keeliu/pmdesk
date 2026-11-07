@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0",
+  "revision": 2,
+  "project_id": "PRJ-20261104-140723-b3f4",
+  "kind": "requirement",
+  "updated_at": "2026-11-04T14:07:47+08:00",
+  "basic": {
+    "name": "AI驱动需求管理工作台建设",
+    "code": "PMRWB",
+    "description": "建设一个以自然语言驱动、技能编排、代码保障确定性的需求管理工作台，覆盖收集澄清、确认入池、分析、原型、评审、开发跟进与迭代规划全链路。",
+    "owner": "产品部",
+    "project_type": "greenfield",
+    "project_type_label": "从 0 到 1 的项目",
+    "background": "需求管理分散在多个工具，AI 产出停留在对话中，无法沉淀为可校验、可流转、可追溯的工程资产。",
+    "goals": [
+      "需求从登记到形成可开发需求包的中位耗时降到 4 小时以内",
+      "需求关键字段完整度达到 90% 以上",
+      "评审一次通过率达到 70% 以上",
+      "AI 提案一次采纳率达到 60% 以上"
+    ]
+  },
+  "organizations": [
+    {
+      "id": "ORG-001",
+      "name": "产品部",
+      "type": "business",
+      "role": "需求收集、分析与方案定义",
+      "contact": "产品负责人"
+    },
+    {
+      "id": "ORG-002",
+      "name": "研发部",
+      "type": "it",
+      "role": "技术评审、容量评估与开发",
+      "contact": "研发负责人"
+    },
+    {
+      "id": "ORG-003",
+      "name": "测试部",
+      "type": "it",
+      "role": "验收标准制定与验收",
+      "contact": "测试负责人"
+    }
+  ],
+  "stakeholders": [
+    {
+      "id": "STK-001",
+      "name": "产品经理",
+      "org_id": "ORG-001",
+      "type": "business",
+      "responsibility": "需求全流程负责人，确认需求与关闭改进建议",
+      "contact": ""
+    },
+    {
+      "id": "STK-002",
+      "name": "研发负责人",
+      "org_id": "ORG-002",
+      "type": "it",
+      "responsibility": "技术可行性与容量评估，参与评审",
+      "contact": ""
+    },
+    {
+      "id": "STK-003",
+      "name": "测试负责人",
+      "org_id": "ORG-003",
+      "type": "it",
+      "responsibility": "验收标准把关与上线验收",
+      "contact": ""
+    }
+  ],
+  "systems": [
+    {
+      "id": "SYS-001",
+      "layer": "platform",
+      "name": "需求管理工作台",
+      "parent": "",
+      "description": "产品经理需求管理平台",
+      "status": "new"
+    },
+    {
+      "id": "SYS-002",
+      "layer": "application",
+      "name": "需求工作台 Web 端",
+      "parent": "需求管理工作台",
+      "description": "单一 Web 工作台",
+      "status": "new"
+    },
+    {
+      "id": "SYS-003",
+      "layer": "module",
+      "name": "需求收集与澄清",
+      "parent": "需求工作台 Web 端",
+      "description": "多源录入、结构化、澄清与待澄清需求箱",
+      "status": "new"
+    },
+    {
+      "id": "SYS-004",
+      "layer": "module",
+      "name": "需求确认与需求池",
+      "parent": "需求工作台 Web 端",
+      "description": "产品经理确认、编号分配、需求池管理",
+      "status": "new"
+    },
+    {
+      "id": "SYS-005",
+      "layer": "module",
+      "name": "需求分析",
+      "parent": "需求工作台 Web 端",
+      "description": "会话式分析、右屏结构化预览、关联需求识别",
+      "status": "new"
+    },
+    {
+      "id": "SYS-006",
+      "layer": "module",
+      "name": "原型 DEMO",
+      "parent": "需求工作台 Web 端",
+      "description": "原型生成、交互预览、会话改稿与回写",
+      "status": "new"
+    },
+    {
+      "id": "SYS-007",
+      "layer": "module",
+      "name": "说明书与需求清单",
+      "parent": "需求工作台 Web 端",
+      "description": "说明书在线预览、Word 导出、清单浏览与导出",
+      "status": "new"
+    },
+    {
+      "id": "SYS-008",
+      "layer": "module",
+      "name": "需求评审",
+      "parent": "需求工作台 Web 端",
+      "description": "在线预览评审、改进建议清单与逐条消除",
+      "status": "new"
+    },
+    {
+      "id": "SYS-009",
+      "layer": "module",
+      "name": "开发期变更管理",
+      "parent": "需求工作台 Web 端",
+      "description": "细化变更分级、影响评估与重新登记",
+      "status": "new"
+    },
+    {
+      "id": "SYS-010",
+      "layer": "module",
+      "name": "状态跟进与迭代规划",
+      "parent": "需求工作台 Web 端",
+      "description": "状态机、风险预警、优先级与排期",
+      "status": "new"
+    },
+    {
+      "id": "SYS-011",
+      "layer": "module",
+      "name": "模型与技能管理",
+      "parent": "需求工作台 Web 端",
+      "description": "模型网关、技能注册、版本与成本看板",
+      "status": "new"
+    }
+  ],
+  "scope": {
+    "system_scope": {
+      "platforms": [
+        "需求管理工作台"
+      ],
+      "applications": [
+        "需求工作台 Web 端"
+      ],
+      "modules": [
+        "需求收集与澄清",
+        "需求确认与需求池",
+        "需求分析",
+        "原型 DEMO",
+        "说明书与需求清单",
+        "需求评审",
+        "开发期变更管理",
+        "状态跟进与迭代规划",
+        "模型与技能管理"
+      ],
+      "excluded": [
+        "代码托管与 CI/CD",
+        "工时与甘特",
+        "移动端 App",
+        "商业化计费"
+      ],
+      "notes": "首版为单一 Web 工作台，原型预览与说明书在线预览均在工作台内完成。"
+    },
+    "enterprise_scope": {
+      "mode": "unified",
+      "canonical": false,
+      "special_companies": [
+        "产品团队"
+      ],
+      "province_companies": [],
+      "total": 1,
+      "personalized": [],
+      "notes": "首版仅单产品团队内部使用，不涉及多单位统建或个性化差异。"
+    }
+  },
+  "conventions": {
+    "notification_channels": [
+      "站内通知",
+      "邮件"
+    ],
+    "approval": "评审通过且改进建议全部闭环后进入开发；重大变更需重新评审或重新登记",
+    "data_permissions": "服务端按角色与资源归属校验，AI 执行以发起人身份运行",
+    "delivery_formats": [
+      "Markdown",
+      "HTML",
+      "DOCX"
+    ],
+    "naming": "需求编号 REQ-<项目号>-<流水号>，产品经理确认后分配且唯一"
+  },
+  "confirmation": {
+    "status": "confirmed",
+    "confirmed_by": "产品经理",
+    "confirmed_at": "2026-11-04T14:07:47+08:00",
+    "source": "user_input"
+  },
+  "revision_history": [
+    {
+      "revision": 1,
+      "at": "2026-11-04T14:07:23+08:00",
+      "by": "技能初始化",
+      "changes": [
+        "创建需求画像骨架"
+      ],
+      "source": "init"
+    },
+    {
+      "revision": 2,
+      "at": "2026-11-04T14:15:00+08:00",
+      "by": "产品经理",
+      "changes": [
+        "按主项目画像与本次八条补充登记需求范围、模块与约定"
+      ],
+      "source": "user_input"
+    },
+    {
+      "revision": 2,
+      "at": "2026-11-04T14:07:47+08:00",
+      "by": "产品经理",
+      "changes": [
+        "沿用主项目画像，需求级无增量"
+      ],
+      "source": "user_input"
+    }
+  ]
+}

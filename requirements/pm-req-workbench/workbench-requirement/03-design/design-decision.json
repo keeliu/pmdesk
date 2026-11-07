@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.1",
+  "decision": "",
+  "mode": "",
+  "design_spec": "",
+  "source": "",
+  "rationale": "",
+  "confirmed_by": "",
+  "confirmed_at": "",
+  "status": "pending_confirmation",
+  "standard_pages": [],
+  "notes": [
+    "先判定新建系统规范 / 沿用既有规范 / 补充既有规范，再由需求负责人确认；确认后 status=confirmed。"
+  ]
+}

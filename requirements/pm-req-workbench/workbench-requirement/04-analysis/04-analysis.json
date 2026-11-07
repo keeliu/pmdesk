@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.1",
+  "project_id": "PRJ-20261104-140723-b3f4",
+  "project_name": "AI驱动需求管理工作台建设",
+  "generated_at": "",
+  "requirement_type": "unknown",
+  "requirement_type_reason": "",
+  "priority": {
+    "value": 0,
+    "scale_days": 0,
+    "stakeholders": 0,
+    "formula": "F(x) = a / b + c",
+    "pert_days": 0,
+    "note": ""
+  },
+  "goals": [],
+  "scope": {
+    "in": [],
+    "out": [],
+    "unified": [],
+    "personalized": []
+  },
+  "stakeholders": [],
+  "requirements": [],
+  "applications": [],
+  "domain": {
+    "events": [],
+    "entities": [],
+    "relationships": [],
+    "state_machines": [],
+    "data_objects": []
+  },
+  "data_flows": {
+    "vertical": [],
+    "horizontal": []
+  },
+  "user_paths": [],
+  "information_architecture": {
+    "terminals": [],
+    "navigation": [],
+    "page_patterns": [],
+    "role_paths": [],
+    "consistency": ""
+  },
+  "ux": {
+    "design_decision": "03-design/design-decision.json",
+    "design_spec": "",
+    "interaction": [],
+    "visual": [],
+    "special": [],
+    "accessibility": []
+  },
+  "functions": [],
+  "integrations": [],
+  "non_functional": [],
+  "assumptions": [],
+  "risks": [],
+  "open_questions": [],
+  "diagram_plan": []
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "",
+  "project_id": "PRJ-20261104-140723-b3f4",
+  "sources": [],
+  "candidate_systems": [],
+  "candidate_modules": [],
+  "candidate_entities": [],
+  "notes": "由 prd-context 的 ingest_materials.py 在收集资料后更新；无资料时保留空数组并写明缺口。"
+}

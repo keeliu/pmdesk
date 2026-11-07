@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "project": "产品经理需求管理工作台",
+  "policy": {
+    "popup_tool": "AskUserQuestion",
+    "clarification_requires_popup": true,
+    "material_request_options": [
+      "直接跳过",
+      "现在提供",
+      "稍后提供"
+    ],
+    "max_questions_per_popup": 4
+  },
+  "updated_at": "2026-11-04T14:05:08+08:00",
+  "entries": [
+    {
+      "id": "POP-001",
+      "stage": "profile",
+      "kind": "profile_confirmation",
+      "asked_at": "2026-11-04T14:04:11+08:00",
+      "header": "使用范围",
+      "question": "这个工作台首版的使用范围是什么？",
+      "multi_select": false,
+      "options": [
+        {
+          "label": "单产品团队内部",
+          "description": "一个产品团队内部使用，按角色划分权限"
+        },
+        {
+          "label": "多产品线共享",
+          "description": "多个产品线共用一个工作空间"
+        },
+        {
+          "label": "多组织 SaaS",
+          "description": "面向多个组织的多租户平台"
+        }
+      ],
+      "answer": "单产品团队内部",
+      "answer_source": "option",
+      "material": "",
+      "provided_sources": [],
+      "deferred_until": "",
+      "outcome": {
+        "type": "confirmed",
+        "ref": "",
+        "summary": "首版按单产品团队内部使用设计，按角色划分权限，不做多租户"
+      },
+      "notes": ""
+    },
+    {
+      "id": "POP-002",
+      "stage": "profile",
+      "kind": "profile_confirmation",
+      "asked_at": "2026-11-04T14:04:11+08:00",
+      "header": "系统边界",
+      "question": "首版的系统范围到哪一层？",
+      "multi_select": false,
+      "options": [
+        {
+          "label": "单一 Web 工作台",
+          "description": "全部能力在一个站点内完成"
+        },
+        {
+          "label": "工作台 + 独立原型预览站",
+          "description": "原型对外单独部署"
+        },
+        {
+          "label": "工作台 + 管理后台",
+          "description": "另建模型与技能管理后台"
+        }
+      ],
+      "answer": "单一 Web 工作台",
+      "answer_source": "option",
+      "material": "",
+      "provided_sources": [],
+      "deferred_until": "",
+      "outcome": {
+        "type": "confirmed",
+        "ref": "",
+        "summary": "首版为单一 Web 工作台，原型预览在工作台内完成"
+      },
+      "notes": ""
+    },
+    {
+      "id": "POP-003",
+      "stage": "profile",
+      "kind": "profile_confirmation",
+      "asked_at": "2026-11-04T14:04:19+08:00",
+      "header": "本期不做",
+      "question": "以下哪些明确不在首版范围？",
+      "multi_select": true,
+      "options": [
+        {
+          "label": "代码托管与 CI/CD",
+          "description": "不接代码仓库"
+        },
+        {
+          "label": "工时与甘特",
+          "description": "不做工时和资源精细排班"
+        },
+        {
+          "label": "移动端 App",
+          "description": "只做桌面浏览器"
+        },
+        {
+          "label": "商业化计费",
+          "description": "不做套餐与账单"
+        }
+      ],
+      "answer": "全选：代码托管与 CI/CD、工时与甘特、移动端 App、商业化计费",
+      "answer_source": "other",
+      "material": "",
+      "provided_sources": [],
+      "deferred_until": "",
+      "outcome": {
+        "type": "confirmed",
+        "ref": "",
+        "summary": "四项均列入本期排除范围"
+      },
+      "notes": ""
+    },
+    {
+      "id": "POP-004",
+      "stage": "profile",
+      "kind": "profile_confirmation",
+      "asked_at": "2026-11-04T14:05:08+08:00",
+      "header": "画像定稿",
+      "question": "以上项目画像是否可以定稿？",
+      "multi_select": false,
+      "options": [
+        {
+          "label": "确认，可以定稿",
+          "description": "按当前画像推进后续阶段"
+        },
+        {
+          "label": "需要修改",
+          "description": "稍后说明具体改动"
+        }
+      ],
+      "answer": "确认，可以定稿",
+      "answer_source": "option",
+      "material": "",
+      "provided_sources": [],
+      "deferred_until": "",
+      "outcome": {
+        "type": "confirmed",
+        "ref": "",
+        "summary": "画像定稿，作为后续阶段共同前提"
+      },
+      "notes": ""
+    }
+  ]
+}

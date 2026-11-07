@@ -1,0 +1,8 @@
+node_modules/
+dist/
+data/
+*.log
+chat.json
+chatres.json
+.DS_Store
+Thumbs.db
